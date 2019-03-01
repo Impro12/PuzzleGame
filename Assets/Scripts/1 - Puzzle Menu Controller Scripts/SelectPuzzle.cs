@@ -16,13 +16,13 @@ public class SelectPuzzle : MonoBehaviour {
     {
         selectedPuzzle = UnityEngine.EventSystems.EventSystem.current.currentSelectedGameObject.name;
 
-        StartCoroutine(ShowPuzzleMenuSelectMenu ());
+        StartCoroutine(ShowPuzzleLevelSelectMenu ());
     }
 
     
     
 
-    IEnumerator ShowPuzzleMenuSelectMenu()
+    IEnumerator ShowPuzzleLevelSelectMenu()
     {
         puzzleLevelSelectPanel.SetActive(true);
         selectPuzzleMenuAnim.Play("SlideOut");
