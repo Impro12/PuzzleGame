@@ -5,6 +5,9 @@ using UnityEngine;
 public class SelectPuzzle : MonoBehaviour {
 
     [SerializeField]
+    private PuzzleGameManager puzzleGameManager;
+
+    [SerializeField]
     private GameObject selectPuzzleMenuPanel, puzzleLevelSelectPanel;
 
     [SerializeField]
@@ -18,6 +21,8 @@ public class SelectPuzzle : MonoBehaviour {
     public void SelectedPuzzle()
     {
         selectedPuzzle = UnityEngine.EventSystems.EventSystem.current.currentSelectedGameObject.name;
+
+        puzzleGameManager.SetSelectedPuzzle(selectedPuzzle);
 
         selectLevel.SetSelectedPuzzle(selectedPuzzle);
 

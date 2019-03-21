@@ -46,14 +46,14 @@ AnimatorState:
   m_MirrorParameter: 
   m_CycleOffsetParameter: 
   m_TimeParameter: 
---- !u!1102 &1102457973203845958
+--- !u!1102 &1102567774914968396
 AnimatorState:
   serializedVersion: 5
-  m_ObjectHideFlags: 3
+  m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: SlideOut
-  m_Speed: -1
+  m_Name: SlideIn
+  m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
   m_StateMachineBehaviours: []
@@ -65,20 +65,20 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: b7e8897f7860c5947840bf65b4846c96, type: 2}
+  m_Motion: {fileID: 7400000, guid: b33295231a9fc384d9c079edfbb6caa8, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
   m_CycleOffsetParameter: 
   m_TimeParameter: 
---- !u!1102 &1102567774914968396
+--- !u!1102 &1102568616296619084
 AnimatorState:
   serializedVersion: 5
-  m_ObjectHideFlags: 1
+  m_ObjectHideFlags: 3
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: SlideIn
-  m_Speed: 1
+  m_Name: SlideOut
+  m_Speed: -1
   m_CycleOffset: 0
   m_Transitions: []
   m_StateMachineBehaviours: []
@@ -111,8 +111,8 @@ AnimatorStateMachine:
     m_State: {fileID: 1102184079127698934}
     m_Position: {x: 252, y: 72, z: 0}
   - serializedVersion: 1
-    m_State: {fileID: 1102457973203845958}
-    m_Position: {x: 492, y: 156, z: 0}
+    m_State: {fileID: 1102568616296619084}
+    m_Position: {x: 480, y: 156, z: 0}
   m_ChildStateMachines: []
   m_AnyStateTransitions: []
   m_EntryTransitions: []

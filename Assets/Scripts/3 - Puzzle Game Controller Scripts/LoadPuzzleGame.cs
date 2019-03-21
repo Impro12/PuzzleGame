@@ -5,6 +5,9 @@ using UnityEngine;
 public class LoadPuzzleGame : MonoBehaviour {
 
     [SerializeField]
+    private LayoutPuzzleButtons layoutPuzzleButtons;
+
+    [SerializeField]
     private GameObject puzzleLevelSelectPanel;
 
     [SerializeField]
@@ -24,6 +27,7 @@ public class LoadPuzzleGame : MonoBehaviour {
     {
         this.puzzleLevel = level;
         this.selectedPuzzle = puzzle;
+        layoutPuzzleButtons.LayoutButtons(level, selectedPuzzle);
 
         switch (puzzleLevel)
         {
@@ -37,7 +41,7 @@ public class LoadPuzzleGame : MonoBehaviour {
                 StartCoroutine(LoadPuzzleGamePanel(puzzleGamePanel3, puzzleGamePanelAnim3));
                 break;
             case 3:
-                StartCoroutine(LoadPuzzleGamePanel(puzzleGamePanel4, puzzleGamePanelAnim5));
+                StartCoroutine(LoadPuzzleGamePanel(puzzleGamePanel4, puzzleGamePanelAnim4));
                 break;
             case 4:
                 StartCoroutine(LoadPuzzleGamePanel(puzzleGamePanel5, puzzleGamePanelAnim5));
@@ -59,7 +63,7 @@ public class LoadPuzzleGame : MonoBehaviour {
                 StartCoroutine(LoadPuzzleLevelSelectMenu(puzzleGamePanel3, puzzleGamePanelAnim3));
                 break;
             case 3:
-                StartCoroutine(LoadPuzzleLevelSelectMenu(puzzleGamePanel4, puzzleGamePanelAnim5));
+                StartCoroutine(LoadPuzzleLevelSelectMenu(puzzleGamePanel4, puzzleGamePanelAnim4));
                 break;
             case 4:
                 StartCoroutine(LoadPuzzleLevelSelectMenu(puzzleGamePanel5, puzzleGamePanelAnim5));
